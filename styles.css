@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background: #004d99; /* 学校的主色调 */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #004d99; /* 为导航栏设置主色调 */
+}
+
+.logo a {
+    text-decoration: none;
+    color: white; /* 更改LOGO颜色以提高可见性 */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white; /* 更改链接颜色以适应背景 */
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #e2e2e2; /* 鼠标悬停时的颜色调整 */
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    height: 300px; /* 设置轮播图的高度 */
+}
+
+.slides {
+    width: 300%; /* 总宽度为单个图片宽度的三倍 */
+    height: 300px;
+    display: flex;
+}
+
+.slide {
+    width: 33.3333%; /* 单个图片宽度 */
+    transition: transform 0.5s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
